@@ -37,4 +37,10 @@ public class MainTest {
         robotito.setBeam(100);
         assertThat(robotito.getBeam()).isEqualTo(100);
     }
+    @Test
+    @DisplayName("should accept valid values for Distance")
+    public void validValuesForDistance(){
+        robotito.setDistance(1);
+        assertThat(robotito.getBeam()).isEqualTo(1);
+    }
 }
