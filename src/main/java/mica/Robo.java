@@ -25,7 +25,7 @@ public class Robo {
     }
 
     public String Coordenates() {
-        return "(100,90)";
+        return "(" + x_coordenate +"," + y_coordenate+")";
     }
 
     public int getBeam() {
