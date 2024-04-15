@@ -16,6 +16,14 @@ public class Robo {
         this.y_coordenate = y_coordenate;
     }
 
+    public void setAngle(int angle) {
+        this.angle = angle;
+    }
+
+    public int getAngle() {
+        return angle;
+    }
+
     public String Coordenates() {
         return "(100,90)";
     }
