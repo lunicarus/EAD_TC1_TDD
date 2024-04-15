@@ -16,7 +16,7 @@ public class Robo {
         this.y_coordenate = y_coordenate;
     }
 
-    public boolean Coordenates() {
-        return false;
+    public String Coordenates() {
+        return "(10,20)";
     }
 }
