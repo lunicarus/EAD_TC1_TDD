@@ -27,4 +27,20 @@ public class Robo {
     public String Coordenates() {
         return "(100,90)";
     }
+
+    public int getBeam() {
+        return beam;
+    }
+
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setBeam(int beam) {
+        this.beam = beam;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
 }
