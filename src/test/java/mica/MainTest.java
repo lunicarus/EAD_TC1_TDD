@@ -34,6 +34,10 @@ public class MainTest {
     public void validValuesForAngle(){
         robotito.setAngle(45);
         assertThat(robotito.getAngle()).isEqualTo(45);
+
+        robotito.setAngle(-10);
+        assertThat(robotito.getAngle()).isGreaterThan(0);
+
     }
     @Test
     @DisplayName("should accept valid values for beam")
@@ -45,6 +49,6 @@ public class MainTest {
     @DisplayName("should accept valid values for Distance")
     public void validValuesForDistance(){
         robotito.setDistance(1);
-        assertThat(robotito.getBeam()).isEqualTo(1);
+        assertThat(robotito.getDistance()).isEqualTo(1);
     }
 }
