@@ -57,6 +57,14 @@ public class MainTest {
         assertThat(robotito.getBeam()).isEqualTo(100);
     }
     @Test
+    @DisplayName("should throw error for invalid angle values")
+    public void invalidValuesForBeam() {
+        assertThatThrownBy(() -> robotito.setBeam(-10))
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("Erro");
+
+    }
+    @Test
     @DisplayName("should accept valid values for Distance")
     public void validValuesForDistance(){
         robotito.setDistance(1);
