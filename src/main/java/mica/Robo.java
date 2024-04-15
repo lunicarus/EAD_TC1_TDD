@@ -17,6 +17,6 @@ public class Robo {
     }
 
     public String Coordenates() {
-        return "(10,20)";
+        return "(100,90)";
     }
 }
