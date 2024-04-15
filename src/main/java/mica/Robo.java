@@ -17,6 +17,9 @@ public class Robo {
     }
 
     public void setAngle(int angle) {
+        if (angle < 0 || angle > 360) {
+            throw new IllegalArgumentException("Erro");
+        }
         this.angle = angle;
     }
 
