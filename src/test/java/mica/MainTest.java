@@ -17,7 +17,7 @@ public class MainTest {
 
     @Test
     @DisplayName("Should Accept valid values of coordinates")
-    public void ValidValuesXandY(){
+    public void validValuesXandY(){
 
     robotito.setX_coordenate(100);
     robotito.setY_coordenate(90);
@@ -26,9 +26,15 @@ public class MainTest {
 
     }
     @Test
-    @DisplayName("should accept valid values for beam")
-    public void ValidValuesForBeam(){
+    @DisplayName("should accept valid values for angle")
+    public void validValuesForAngle(){
         robotito.setAngle(45);
         assertThat(robotito.getAngle()).isEqualTo(45);
+    }
+    @Test
+    @DisplayName("should accept valid values for beam")
+    public void validValuesForBeam(){
+        robotito.setBeam(100);
+        assertThat(robotito.getBeam()).isEqualTo(100);
     }
 }
