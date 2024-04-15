@@ -32,15 +32,14 @@ public class Robo {
         return beam;
     }
 
-    public int getDistance() {
-        return distance;
-    }
 
     public void setBeam(int beam) {
         this.beam = beam;
     }
-
     public void setDistance(int distance) {
         this.distance = distance;
+    }
+    public int getDistance() {
+        return distance;
     }
 }
