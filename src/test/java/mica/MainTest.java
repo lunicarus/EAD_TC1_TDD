@@ -17,14 +17,18 @@ public class MainTest {
 
     @Test
     @DisplayName("Should Accept valid values of coordinates")
-    public void validValuesXandY(){
+    public void validCoordinates(){
 
     robotito.setX_coordenate(100);
     robotito.setY_coordenate(90);
     assertThat(robotito.Coordenates()).isEqualTo("(100,90)");
 
+    robotito.setX_coordenate(15);
+    robotito.setY_coordenate(10);
+    assertThat(robotito.Coordenates()).isEqualTo("(15,10)");
 
     }
+
     @Test
     @DisplayName("should accept valid values for angle")
     public void validValuesForAngle(){
